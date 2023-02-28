@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning to Estimate Two Dense Depths from LiDAR and Event Data</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="bg-body-secondary">
+      <div class="container text-center p-4">
+        <h1>Learning to Estimate Two Dense Depths from LiDAR and Event Data</h1>
+        <h3 class="text-secondary">Scandinavian Conference on Image Analysis (SCIA) 2023</h3>
+        <hr>
+        <p>
+          <a href="https://www.hds.utc.fr/~vbrebion">Vincent Brebion</a>,
+          <a href="https://www.hds.utc.fr/~moreajul">Julien Moreau</a>,
+          <a href="https://www.hds.utc.fr/~fdavoine">Franck Davoine</a> <br>
+          Heudiasyc (Heuristics and Diagnosis of Complex Systems) Laboratory, CNRS, Université de technologie de Compiègne (UTC), 60319 Compiègne Cedex, France
+        </p>
+        <div class="all-links">
+          <a href="article/Learning to Estimate Two Dense Depths from LiDAR and Event Data.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" role="button"><img src="logos/document.svg" height="30"/ class="my-1"><br>Main article</a>
+          <a href="article/Supplementary Material - Learning to Estimate Two Dense Depths from LiDAR and Event Data.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" role="button"><img src="logos/document.svg" height="30"/ class="my-1"><br>Suppl. mat.</a>
+          <a href="TODO" target="_blank" rel="noopener noreferrer" class="btn btn-warning disabled" role="button"><img src="logos/download.svg" height="30"/ class="my-1"><br>SLED dataset (soon)</a>
+          <a href="https://github.com/vbrebion/ALED" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button"><img src="logos/github.svg" height="30"/ class="my-1"><br>Source code (ALED)</a>
+          <a href="https://github.com/vbrebion/SLED" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button"><img src="logos/github.svg" height="30"/ class="my-1"><br>Source code (SLED)</a>
+          <a href="https://youtube.com/playlist?list=PLLL0eWAd6OXAJGOuzPdgmWLBf715IRlfw" target="_blank" rel="noopener noreferrer" class="btn btn-danger" role="button"><img src="logos/youtube.svg" height="30"/ class="my-1"><br>Results (videos)</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container p-4">
+        <video src="videos/aled.webm" width="100%" autoplay muted loop></video>
+        <hr class="my-4">
+        <h5>Abstract</h5>
+        <p>Event cameras do not produce images, but rather a continuous flow of events, which encode changes of illumination for each pixel independently and asynchronously. While they output temporally rich information, they lack any depth information which could facilitate their use with other sensors. LiDARs can provide this depth information, but are by nature very sparse, which makes the depth-to-event association more complex. Furthermore, as events represent changes of illumination, they might also represent changes of depth; associating them with a single depth is therefore inadequate. In this work, we propose to address these issues by fusing information from an event camera and a LiDAR using a learning-based approach to estimate accurate dense depth maps. To solve the "potential change of depth" problem, we propose here to estimate two depth maps at each step: one "before" the events happen, and one "after" the events happen. We further propose to use this pair of depths to compute a depth difference for each event, to give them more context. We train and evaluate our network, ALED, on both synthetic and real driving sequences, and show that it is able to predict dense depths with an error reduction of up to 61% compared to the current state of the art. We also demonstrate the quality of our 2-depths-to-event association, and the usefulness of the depth difference information. Finally, we release SLED, a novel synthetic dataset comprising events, LiDAR point clouds, RGB images, and dense depth maps.</p>
+        <hr class="my-4">
+        <h5>Citation</h5>
+        <pre class="bg-body-secondary px-3 py-3"><code>@inproceedings{Brebion2023LearningToET,
+<!--   -->  title={Learning to Estimate Two Dense Depths from LiDAR and Event Data},
+<!--   -->  author={Vincent Brebion and Julien Moreau and Franck Davoine},
+<!--   -->  booktitle={Scandinavian Conference on Image Analysis},
+<!--   -->  year={2023}
+<!--   -->}</code></pre>
+        <hr class="my-4">
+        <h5>Acknowledgment</h5>
+        <p>This work is supported in part by the Hauts-de-France Region and in part by the SIVALab Joint Laboratory (Renault Group - Université de technologie de Compiègne (UTC) - Centre National de la Recherche Scientifique (CNRS)).</p>
+      </div>
+    </section>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>-->
+  </body>
+</html>

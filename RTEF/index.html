@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Real-Time Optical Flow for Vehicular Perception with Low- and High-Resolution Event Cameras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="bg-body-secondary">
+      <div class="container text-center p-4">
+        <h1>Real-Time Optical Flow for Vehicular Perception with Low- and High-Resolution Event Cameras</h1>
+        <h3 class="text-secondary">IEEE Transactions on Intelligent Transportation Systems</h3>
+        <hr>
+        <p>
+          <a href="https://www.hds.utc.fr/~vbrebion">Vincent Brebion</a>,
+          <a href="https://www.hds.utc.fr/~moreajul">Julien Moreau</a>,
+          <a href="https://www.hds.utc.fr/~fdavoine">Franck Davoine</a> <br>
+          Heudiasyc (Heuristics and Diagnosis of Complex Systems) Laboratory, CNRS, Université de technologie de Compiègne (UTC), 60319 Compiègne Cedex, France
+        </p>
+        <div class="all-links">
+          <a href="https://arxiv.org/pdf/2112.10591.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" role="button"><img src="../logos/document.svg" height="30"/ class="my-1"><br>Main article</a>
+          <a href="poster/poster_rtef.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-success" role="button"><img src="../logos/poster.svg" height="30"/ class="my-1"><br>Poster</a>
+          <a href="https://datasets.hds.utc.fr/share/er2aA4R0QMJzMyO" target="_blank" rel="noopener noreferrer" class="btn btn-warning" role="button"><img src="../logos/download.svg" height="30"/ class="my-1"><br>Dataset</a>
+          <a href="https://github.com/vbrebion/rt_of_low_high_res_event_cameras" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button"><img src="../logos/github.svg" height="30"/ class="my-1"><br>Source code</a>
+          <a href="https://youtube.com/playlist?list=PLLL0eWAd6OXBRXli-tB1NREdhBElAxisD" target="_blank" rel="noopener noreferrer" class="btn btn-danger" role="button"><img src="../logos/youtube.svg" height="30"/ class="my-1"><br>Results (videos)</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container p-4">
+        <video src="videos/rtef.webm" width="100%" autoplay muted loop></video>
+        <hr class="my-4">
+        <h5>Abstract</h5>
+        <p>Event cameras capture changes of illumination in the observed scene rather than accumulating light to create images. Thus, they allow for applications under high-speed motion and complex lighting conditions, where traditional framebased sensors show their limits with blur and over- or under-exposed pixels. Thanks to these unique properties, they represent nowadays an highly attractive sensor for ITS-related applications. Event-based optical flow (EBOF) has been studied following the rise in popularity of these neuromorphic cameras. The recent arrival of high-definition neuromorphic sensors, however, challenges the existing approaches, because of the increased resolution of the events pixel array and a much higher throughput. As an answer to these points, we propose an optimized framework for computing optical flow in real-time with both low- and high-resolution event cameras. We formulate a novel dense representation for the sparse events flow, in the form of the “inverse exponential distance surface”. It serves as an interim frame, designed for the use of proven, state-of-the-art frame-based optical flow computation methods. We evaluate our approach on both low- and high-resolution driving sequences, and show that it often achieves better results than the current state of the art, while also reaching higher frame rates, 250Hz at 346x260 pixels and 77Hz at 1280x720 pixels.</p>
+        <hr class="my-4">
+        <h5>Citation</h5>
+        <pre class="bg-body-secondary px-3 py-3"><code>@article{Brebion2022RealTimeOF,
+<!-- -->  title={Real-Time Optical Flow for Vehicular Perception With Low- and High-Resolution Event Cameras},
+<!-- -->  author={Vincent Brebion and Julien Moreau and Franck Davoine},
+<!-- -->  journal={IEEE Transactions on Intelligent Transportation Systems},
+<!-- -->  year={2022},
+<!-- -->  volume={23},
+<!-- -->  number={9},
+<!-- -->  pages={15066-15078}
+<!-- -->}</code></pre>
+        <hr class="my-4">
+        <h5>Acknowledgment</h5>
+        <p>This work is supported in part by the Hauts-de-France Region and in part by the SIVALab Joint Laboratory (Renault Group - Université de technologie de Compiègne (UTC) - Centre National de la Recherche Scientifique (CNRS)).</p>
+      </div>
+    </section>
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>-->
+  </body>
+</html>

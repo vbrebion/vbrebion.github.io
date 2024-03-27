@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Multimodal Estimation of Movement and Depth Based on Events for Scene Analysis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section class="bg-body-secondary">
+      <div class="container text-center p-4">
+        <h1>Multimodal Estimation of Movement and Depth Based on Events for Scene Analysis</h1>
+        <h3 class="text-secondary">PhD Thesis, defended in January 2024</h3>
+        <hr>
+        <p>
+          <a href="..">Vincent Brebion</a> <br>
+          Heudiasyc (Heuristics and Diagnosis of Complex Systems) Laboratory, CNRS, Université de technologie de Compiègne (UTC), 60319 Compiègne Cedex, France
+        </p>
+        <div class="all-links">
+          <a href="thesis/phd_thesis_brebion.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" role="button"><img src="../logos/document.svg" height="30"/ class="my-1"><br>Thesis</a>
+          <a href="https://github.com/vbrebion/phd_thesis_brebion" target="_blank" rel="noopener noreferrer" class="btn btn-dark" role="button"><img src="../logos/github.svg" height="30"/ class="my-1"><br>Source code (thesis)</a>
+          <a target="_blank" rel="noopener noreferrer" class="btn btn-warning disabled" role="button"><img src="../logos/poster.svg" height="30"/ class="my-1"><br>Slides (soon)</a>
+          <a target="_blank" rel="noopener noreferrer" class="btn btn-danger disabled" role="button"><img src="../logos/youtube.svg" height="30"/ class="my-1"><br>PhD defense (soon)</a>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container p-4">
+        <h5>Abstract</h5>
+        <p>Event cameras open new perception capabilities, allowing for the analysis of highly dynamic scenes with complex lighting. In the context of this thesis, two low-level perception tasks were examined in particular: (1) optical flow and (2) depth estimation.</p>
+        <p>In the case of optical flow, an optimization-based approach was developed, allowing for the estimation of optical flow in real-time with a single high-resolution event camera. Our approach provides accurate results, and was at the time of publishing the only event-based optical flow method working in real-time with high-resolution event cameras.</p>
+        <p>As for the depth estimation, a learning-based data-fusion method between a LiDAR and an event camera was proposed for estimating dense depth maps, in the form of a convolutional neural network (ALED). A novel notion of "two depths per event" was also proposed, as well as a novel simulated dataset containing high-resolution LiDAR, event data, and perfect ground truth depth maps. Compared to the state of the art, an error reduction of up to 61% was achieved, demonstrating the quality of the network and the benefits brought by the use of our novel dataset.</p>
+        <p>An extension to this depth estimation work was also proposed, this time using a recurrent attention-based network (DELTA) for a better modeling of the spatial and temporal relations between the LiDAR and the event data. Compared to ALED, DELTA is able to improve results across all metrics, and especially for short ranges (which are the most critical for robotic applications), where the average error is reduced up to four times.</p>
+        <hr class="my-4">
+        <h5>Citation</h5>
+        <pre class="bg-body-secondary px-3 py-3"><code>@phdthesis{Brebion2024MultimodalEO,
+<!--   -->  title={Multimodal Estimation of Movement and Depth Based on Events for Scene Analysis},
+<!--   -->  author={Vincent Brebion},
+<!--   -->  school={Université de technologie de Compiègne},
+<!--   -->  year={2024},
+<!--   -->  month={January},
+<!--   -->  type={PhD thesis}
+<!--   -->}</code></pre>
+        <hr class="my-4">
+        <h5>Acknowledgment</h5>
+        <p>This work is supported in part by the Hauts-de-France Region and in part by the SIVALab Joint Laboratory (Renault Group - Université de technologie de Compiègne (UTC) - Centre National de la Recherche Scientifique (CNRS)).</p>
+      </div>
+    </section>
+  </body>
+</html>

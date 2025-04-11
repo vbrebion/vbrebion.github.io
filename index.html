@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Vincent Brebion - Research & Publications</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script type="text/javascript" src="colormode.js"></script>
+    <link rel="stylesheet" href="resources/style.css">
+    <script type="text/javascript" src="resources/colormode.js"></script>
   </head>
   <body>
     <section class="bg-body-secondary">
@@ -21,7 +22,7 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">2024-2026 : <b>Postdoc</b>, Lund University, Centre for Environmental and Climate Science (CEC), Computational Science for Health and Environment (COSHE) group</li>
             <li class="list-group-item">2023-2024 : <b>ATER</b> (Non-Tenured Teaching and Research Associate), INSA Lyon, LIRIS laboratory</li>
-            <li class="list-group-item">2020-2023 : <b>PhD</b> "Multimodal estimation of movement and depth based on events for scene analysis", under the supervision of MM. Franck DAVOINE and Julien MOREAU, Université de Technologie de Compiègne (UTC), Heudiasyc and SIVALab laboratories</li>
+            <li class="list-group-item">2020-2023 : <b>PhD</b> "Multimodal estimation of movement and depth based on events for scene analysis", under the supervision of Franck DAVOINE and Julien MOREAU, Université de Technologie de Compiègne (UTC), Heudiasyc and SIVALab laboratories</li>
             <li class="list-group-item">2019-2020 : <b>Master's degree</b> in Complex Systems Engineering, Université de Technologie de Compiègne (UTC), Robotics for Intelligent Systems specialty</li>
             <li class="list-group-item">2015-2020 : <b>Diplôme d'Ingénieur</b> in Computer Science, Université de Technologie de Compiègne (UTC), Real Time Systems and Embedded Computing specialty</li>
           </ul>
@@ -30,17 +31,30 @@
     </section>
     <section>
       <div class="container p-4">
-        <h4>Published work</h4>
+        <h4>Published works</h4>
         <div class="container">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="publications_images/phd.webp" class="card-img-top" alt="Illustration for PHD thesis">
+                <img src="resources/publications_images/delta.webp" class="card-img-top" alt="Illustration for DELTA">
+                <div class="card-body">
+                  <h5 class="card-title">DELTA: Dense Depth from Events and LiDAR using Transformer's Attention</h5>
+                  <p class="card-text text-secondary">CVPR Workshop on Event-based Vision, Jun. 2025</p>
+                </div>
+                <div class="card-footer all-links">
+                  <a href="DELTA/article/DELTA: Dense Depth from Events and LiDAR using Transformer's Attention.pdf" class="btn btn-primary" target="_blank">PDF</a>
+                  <a href="DELTA" class="btn btn-primary">Project page</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="resources/publications_images/phd.webp" class="card-img-top" alt="Illustration for PHD thesis">
                 <div class="card-body">
                   <h5 class="card-title">Multimodal Estimation of Movement and Depth based on Events for Scene Analysis</h5>
-                  <p class="card-text">PhD thesis</p>
+                  <p class="card-text text-secondary">PhD thesis, Jan. 2024</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer all-links">
                   <a href="PHD/thesis/phd_thesis_brebion.pdf" class="btn btn-primary" target="_blank">PDF</a>
                   <a href="PHD" class="btn btn-primary">Project page</a>
                 </div>
@@ -48,12 +62,12 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="publications_images/aled.webp" class="card-img-top" alt="Illustration for ALED">
+                <img src="resources/publications_images/aled.webp" class="card-img-top" alt="Illustration for ALED">
                 <div class="card-body">
                   <h5 class="card-title">Learning to Estimate Two Dense Depths from LiDAR and Event Data</h5>
-                  <p class="card-text">Scandinavian Conference on Image Analysis (SCIA) 2023</p>
+                  <p class="card-text text-secondary">Scandinavian Conference on Image Analysis (SCIA), Apr. 2023</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer all-links">
                   <a href="https://arxiv.org/pdf/2302.14444.pdf" class="btn btn-primary" target="_blank">PDF</a>
                   <a href="ALED" class="btn btn-primary">Project page</a>
                 </div>
@@ -61,12 +75,12 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="publications_images/rtef.webp" class="card-img-top" alt="Illustration for RTEF">
+                <img src="resources/publications_images/rtef.webp" class="card-img-top" alt="Illustration for RTEF">
                 <div class="card-body">
                   <h5 class="card-title">Real-Time Optical Flow for Vehicular Perception with Low- and High-Resolution Event Cameras</h5>
-                  <p class="card-text">IEEE Transactions on Intelligent Transportation Systems</p>
+                  <p class="card-text text-secondary">IEEE Transactions on Intelligent Transportation Systems, Sep. 2022</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer all-links">
                   <a href="https://arxiv.org/pdf/2112.10591.pdf" class="btn btn-primary" target="_blank">PDF</a>
                   <a href="RTEF" class="btn btn-primary">Project page</a>
                 </div>
@@ -74,12 +88,12 @@
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="publications_images/rfiap.webp" class="card-img-top" alt="Illustration for RFIAP article">
+                <img src="resources/publications_images/rfiap.webp" class="card-img-top" alt="Illustration for RFIAP article">
                 <div class="card-body">
                   <h5 class="card-title">Estimation de flot optique basé évènements en temps réel</h5>
-                  <p class="card-text">Congrès Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP) 2022</p>
+                  <p class="card-text text-secondary">Congrès Reconnaissance des Formes, Image, Apprentissage et Perception (RFIAP), Jul. 2022</p>
                 </div>
-                <div class="card-footer">
+                <div class="card-footer all-links">
                   <a href="https://hal.archives-ouvertes.fr/hal-03690073" class="btn btn-primary" target="_blank">PDF</a>
                 </div>
               </div>
